@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: practica-s11
+data:
+  SPRING_DATA_MONGODB_HOST: mongo
+  SPRING_DATA_MONGODB_PORT: "27017"
+  SPRING_DATA_MONGODB_DATABASE: practica
+  SPRING_DATA_MONGODB_AUTHENTICATION_DATABASE: admin
+  SERVER_PORT: "8080"
